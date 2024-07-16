@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="AlarmClock.css">
+
+</head>
+
+<body>
+    <div class="head">Alarm Clock</div>
+    <div class="alarmclock">
+        <div class="img">
+            <img src="OIP.jpg" id="clock">
+
+        </div>
+        <div class="time">
+            00:00:00
+        </div>
+        <div class="ring">Alarm at: <span id="ringtime"> </span></div>
+        <div class="feedtime">
+            <input type="number" id="hours" placeholder="Hours" min="00" max="12">
+            <input type="number" id="minutes" placeholder="Minutes" min="00" max="60">
+            <input type="number" id="seconds" placeholder="Seconds" min="00" max="60">
+            <select id="timestr">
+                <option value="pm">pm</option>
+                <option value="am">am</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button id="setalarm" onclick="setalarm()">Set Alarm</button>
+            <button onclick="window.location.reload()" id="stopalarm">Stop Alarm</button>
+        </div>
+    </div>
+    <audio src="Alarm-Clock-Short-chosic.com_.mp3" id="ringsound"></audio>
+
+
+</body>
+<script src="AlarmClock.js"></script>
+
+</html>
