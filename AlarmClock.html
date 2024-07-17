@@ -19,7 +19,8 @@
         <div class="time">
             00:00:00
         </div>
-        <div class="ring">Alarm at: <span id="ringtime"> </span></div>
+        <div class="ring">Alarm at: <div id="ringtime"> </div>
+        </div>
         <div class="feedtime">
             <input type="number" id="hours" placeholder="Hours" min="00" max="12">
             <input type="number" id="minutes" placeholder="Minutes" min="00" max="60">
@@ -30,8 +31,9 @@
             </select>
         </div>
         <div class="buttons">
-            <button id="setalarm" onclick="setalarm()">Set Alarm</button>
-            <button onclick="window.location.reload()" id="stopalarm">Stop Alarm</button>
+            <button id="setalarm" onclick="storetime()">Set Alarm</button>
+            <button onclick="stopalarm()" id="stopalarm">Stop Alarm</button>
+            <div onclick="window.location.reload()" class="clear">Clear All</div>
         </div>
     </div>
     <audio src="Alarm-Clock-Short-chosic.com_.mp3" id="ringsound"></audio>
